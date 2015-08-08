@@ -137,13 +137,13 @@ public class TrieTree {
 		Scanner scan = new Scanner(System.in);
 		a = scan.nextInt();
 		while(a > 0){
-			word = scan.nextLine();
+			word = scan.next();
 			trie.addWord(word);
 			a--;
 		}
 		b = scan.nextInt();
 		while(b > 0){
-			prefix = scan.nextLine();
+			prefix = scan.next();
 		    count = trie.countPrefixes(prefix);
 			System.out.println(count);
 		}
